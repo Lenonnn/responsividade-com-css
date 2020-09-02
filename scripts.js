@@ -2,6 +2,10 @@ const sectionCards = document.querySelector("section.cards");
 
 const card = document.querySelector("div.card");
 
+
+// stoped at 00:13:14
+
+
 const videos = [
   {
     title: "Formulário Animado com JS puro e CSS Animation | Mayk Brito",
