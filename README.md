@@ -17,10 +17,18 @@ Conceitos e tecnologias!
 - Unidadedes de medidas do CSS:
 
 1.Layout Fixo
-``` px  ``` - Pixels
+- ``` px  ``` - Pixels
 
 2.Layout Fluído
-``` %  ``` - Porcentagem
-``` auto ``` - Automático
-` vh ` - Viewport Heigth
-` vw ` - Viewport Width
+- ``` %  ``` - Porcentagem
+- ``` auto ``` - Automático
+- ` vh ` - Viewport Heigth
+- ` vw ` - Viewport Width
+
+3.Textos fixos
+- ``` 1px ``` = 0.75pt
+- ``` 16px ``` = 12pt
+
+4.Textos fluídos
+- ``` em  ``` - multiplicado pelo pai
+- ``` rem  ``` - multiplicado pelo root
