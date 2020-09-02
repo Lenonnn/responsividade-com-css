@@ -5,7 +5,7 @@
 
 Professor Mayk Brito da [Rocketseat](https://rocketseat.com.br/).
 
-COnceitos e tecnologias!
+Conceitos e tecnologias!
 - [X] CSS
 - [X] HTML
 - [X] Responsividade
