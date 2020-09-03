@@ -3,8 +3,6 @@ const sectionCards = document.querySelector("section.cards");
 const card = document.querySelector("div.card");
 
 
-// stoped at 00:27:48
-
 
 const videos = [
   {

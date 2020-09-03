@@ -108,9 +108,18 @@ section.hero .container {
   width: 90%;
   max-width: 980px;
   margin: auto;
-
   display: flex;
 }
+.hero .container img{
+  width: 20rem;
+  height: 30rem;
+  margin-left: 2rem;
+}
+
+.hero .container a{
+  margin-top: 4rem;
+}
+
 
 section.hero p {
   color: rgb(154, 142, 191);
@@ -119,6 +128,13 @@ section.hero p {
   margin: 10px 0px 0px;
 }
 
+
+/* section.hero img {
+  margin-left: 5rem;
+  margin-right: 2rem;
+  width: 15rem;
+  height: 30rem;
+} */
 
 
 /*=============== 
@@ -136,7 +152,9 @@ CARDS
   margin: auto;
 
   display: grid;
-  grid-template-columns: 310px 310px 310px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
@@ -355,3 +373,94 @@ FORM
 #form .button {
   margin: 2rem 0.8rem 1rem;
 }
+
+/* Media queries  0px - 768px*/
+@media (max-width: 768px){
+  html {
+    font-size: 50%;
+  }
+
+}
+
+@media (max-width: 630px){
+  .hero .container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero .container img{
+    order: -1;
+    margin-left: 40%;
+    margin-bottom: 4rem;
+  }
+
+  .form-group{
+    display: block;
+  }
+}
+
+@media (max-width: 540px){
+  nav{
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 0.5rem;
+    width: 100%;
+    margin: 0.6rem auto;
+
+    transition-duration: 0.3s;
+  }
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #7159c1;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav{
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+  }
+  .menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(8px, 5px);
+  }
+  .menu-section.on .menu-toggle .two{
+    opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -4px);
+  }
+  .menu-section.on nav ul{
+    text-align: center;
+    display: block;
+  }
+  .menu-section.on nav ul a{
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+}
+
