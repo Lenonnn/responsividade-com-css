@@ -69,7 +69,7 @@ header nav ul li a:hover {
 h2 {
   
   color: rgb(75, 75, 75);
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 4.6rem;
 }
 
@@ -93,7 +93,7 @@ h3 {
 }
 
 .button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 
@@ -110,15 +110,17 @@ section.hero .container {
   margin: auto;
   display: flex;
 }
+
 .hero .container img{
   width: 20rem;
   height: 30rem;
   margin-left: 2rem;
 }
 
-.hero .container a{
+
+/* .hero .container a{
   margin-top: 4rem;
-}
+} */
 
 
 section.hero p {
@@ -129,20 +131,13 @@ section.hero p {
 }
 
 
-/* section.hero img {
-  margin-left: 5rem;
-  margin-right: 2rem;
-  width: 15rem;
-  height: 30rem;
-} */
-
-
 /*=============== 
 MAIN
 ==================*/
 main {
   margin-bottom: 80px;
 }
+
 /*=============== 
 CARDS
 ==================*/
@@ -245,8 +240,8 @@ MODAL
   
   background-color: #fff;
   
-  width: 800px;
-  height: 400px;
+  width: 80%;
+  height: 80%;
   
   margin: 0 auto;
   padding: 1rem;
@@ -368,6 +363,7 @@ FORM
   margin: -0.4rem 0.8rem 1rem;
   padding: 1.2rem;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 #form .button {
@@ -375,6 +371,7 @@ FORM
 }
 
 /* Media queries  0px - 768px*/
+
 @media (max-width: 768px){
   html {
     font-size: 50%;
@@ -395,6 +392,7 @@ FORM
 
   .form-group{
     display: block;
+    width: 95%;
   }
 }
 
@@ -440,8 +438,8 @@ FORM
 
   .menu-section.on .menu-toggle {
     position: absolute;
-    right: 0;
-    top: 1.5rem;
+    right: 30px;
+    top: 30px;
   }
   .menu-section.on .menu-toggle .one{
     transform: rotate(45deg) translate(8px, 5px);
@@ -462,5 +460,12 @@ FORM
     line-height: 4rem;
     display: block;
   }
+  
 }
 
+
+@media all and (max-width: 380px){
+  #form h3{
+    font-size: 2rem;
+  }
+}
