@@ -103,3 +103,7 @@ Usar a tag `<pictures>` torna as imagens responsivas.
 ```
 
 JPG, PNG vs SVG
+
+## GitHub Pages
+
+Acesse o resultado [aqui](https://lenonnn.github.io/responsividade-com-css/).
